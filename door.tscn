@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://h4l636xpcc1h"]
+
+[ext_resource type="Texture2D" uid="uid://bggtny7sv1spu" path="res://assets/using_tilesets_kenney_abstract_platformer_tile_sheet.webp" id="1_ba8gm"]
+[ext_resource type="Script" uid="uid://lfmcdvjth6ey" path="res://door.gd" id="1_v6xrn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4rq0c"]
+size = Vector2(64, 64)
+
+[node name="Door" type="StaticBody2D" unique_id=1854463387]
+script = ExtResource("1_v6xrn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1762476966]
+shape = SubResource("RectangleShape2D_4rq0c")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=830572225]
+texture = ExtResource("1_ba8gm")
+hframes = 22
+vframes = 12
+frame = 218

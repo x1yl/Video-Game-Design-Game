@@ -3,6 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://cj2tgpgdvqr5s" path="res://scenes/player.tscn" id="1_w7c3h"]
 [ext_resource type="PackedScene" uid="uid://n5bywjb81dow" path="res://scenes/key.tscn" id="2_mx8sn"]
 [ext_resource type="Texture2D" uid="uid://bggtny7sv1spu" path="res://assets/using_tilesets_kenney_abstract_platformer_tile_sheet.webp" id="2_w8frs"]
+[ext_resource type="Script" uid="uid://7ejajuk4fsx4" path="res://scenes/tile_map_layer.gd" id="4_mx8sn"]
+[ext_resource type="PackedScene" uid="uid://h4l636xpcc1h" path="res://door.tscn" id="5_ppgk2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mx8sn"]
 texture = ExtResource("2_w8frs")
@@ -282,12 +284,9 @@ sources/3 = SubResource("TileSetAtlasSource_mx8sn")
 [node name="Player" parent="." unique_id=727619982 instance=ExtResource("1_w7c3h")]
 position = Vector2(64, 104)
 
-[node name="Key" parent="." unique_id=1203402545 instance=ExtResource("2_mx8sn")]
-position = Vector2(224, 544)
-color = Color(0.69272846, 0.3344364, 0.39363447, 1)
-
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=634586002]
 tile_map_data = PackedByteArray("AAAAAAkAAwAFAAUAAAABAAkAAwAFAAUAAAACAAkAAwAFAAUAAAADAAkAAwAFAAUAAAAEAAkAAwAFAAUAAAAFAAkAAwAFAAUAAAAGAAkAAwAFAAUAAAAHAAkAAwAFAAUAAAAIAAkAAwAFAAUAAAAJAAkAAwAFAAUAAAAKAAkAAwAFAAUAAAALAAkAAwAFAAUAAAAMAAkAAwAFAAUAAAANAAkAAwAFAAUAAAAOAAkAAwAFAAUAAAAPAAkAAwAFAAUAAAAQAAkAAwAFAAUAAAARAAkAAwAFAAUAAAA=")
 tile_set = SubResource("TileSet_4rq0c")
-
-[connection signal="body_exited" from="Key" to="Key" method="_on_body_exited"]
+script = ExtResource("4_mx8sn")
+lever_scene = ExtResource("2_mx8sn")
+door_scene = ExtResource("5_ppgk2")

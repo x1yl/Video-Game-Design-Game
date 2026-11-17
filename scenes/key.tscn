@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bggtny7sv1spu" path="res://assets/using_tilesets_kenney_abstract_platformer_tile_sheet.webp" id="1_yk2u2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4rq0c"]
-size = Vector2(32, 32)
+size = Vector2(64, 64)
 
 [node name="Key" type="Area2D" unique_id=1196810838]
 collision_layer = 2
@@ -17,7 +17,7 @@ shape = SubResource("RectangleShape2D_4rq0c")
 texture = ExtResource("1_yk2u2")
 hframes = 22
 vframes = 12
-frame = 79
+frame = 251
 region_rect = Rect2(846.79425, 256.25983, 34.237427, 59.91548)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
