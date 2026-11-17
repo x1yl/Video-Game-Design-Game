@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://n5bywjb81dow"]
 
-[ext_resource type="Script" uid="uid://cg1ek526ltaxb" path="res://scenes/key.gd" id="1_fttkb"]
+[ext_resource type="Script" uid="uid://cg1ek526ltaxb" path="res://scripts/key.gd" id="1_fttkb"]
 [ext_resource type="Texture2D" uid="uid://bggtny7sv1spu" path="res://assets/using_tilesets_kenney_abstract_platformer_tile_sheet.webp" id="1_yk2u2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4rq0c"]

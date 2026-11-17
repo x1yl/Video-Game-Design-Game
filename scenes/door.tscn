@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://h4l636xpcc1h"]
 
 [ext_resource type="Texture2D" uid="uid://bggtny7sv1spu" path="res://assets/using_tilesets_kenney_abstract_platformer_tile_sheet.webp" id="1_ba8gm"]
-[ext_resource type="Script" uid="uid://lfmcdvjth6ey" path="res://door.gd" id="1_v6xrn"]
+[ext_resource type="Script" uid="uid://lfmcdvjth6ey" path="res://scripts/door.gd" id="1_v6xrn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4rq0c"]
 size = Vector2(64, 64)

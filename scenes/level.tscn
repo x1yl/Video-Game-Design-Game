@@ -3,8 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://cj2tgpgdvqr5s" path="res://scenes/player.tscn" id="1_w7c3h"]
 [ext_resource type="PackedScene" uid="uid://n5bywjb81dow" path="res://scenes/key.tscn" id="2_mx8sn"]
 [ext_resource type="Texture2D" uid="uid://bggtny7sv1spu" path="res://assets/using_tilesets_kenney_abstract_platformer_tile_sheet.webp" id="2_w8frs"]
-[ext_resource type="Script" uid="uid://7ejajuk4fsx4" path="res://scenes/tile_map_layer.gd" id="4_mx8sn"]
-[ext_resource type="PackedScene" uid="uid://h4l636xpcc1h" path="res://door.tscn" id="5_ppgk2"]
+[ext_resource type="Script" uid="uid://7ejajuk4fsx4" path="res://scripts/tile_map_layer.gd" id="4_mx8sn"]
+[ext_resource type="PackedScene" uid="uid://h4l636xpcc1h" path="res://scenes/door.tscn" id="5_ppgk2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mx8sn"]
 texture = ExtResource("2_w8frs")
